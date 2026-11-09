@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#008bef">
+  <meta name="description" content="TRAVECO — encontre hospedagens, leia avaliações e organize sua próxima viagem.">
+  <title>TRAVECO | Hospedagens e viagens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="TRAVECO, página inicial" data-route="home">TRAVECO</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#inicio" data-route="home">⌂ <span>INÍCIO</span></a>
+      <a href="#hoteis" data-route="hotels">▦ <span>HOTÉIS</span></a>
+      <a href="#agendamentos" data-route="bookings">▣ <span>AGENDAMENTOS</span></a>
+      <a href="#favoritos" data-route="favorites">♡ <span>FAVORITOS</span></a>
+      <a href="#conta" data-route="account" id="accountNav">◉ <span>CONTA</span></a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1" aria-live="polite">
+    <noscript>Ative o JavaScript do navegador para utilizar o TRAVECO.</noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><strong>TRAVECO</strong><p>Encontre lugares especiais para sua próxima viagem.</p></div>
+    <div><strong>Contato</strong><p>Feedback: <a href="mailto:cptraveco@gmail.com">cptraveco@gmail.com</a><br>Suporte: <a href="mailto:travecosuporte@gmail.com">travecosuporte@gmail.com</a></p></div>
+    <div><strong>Informações</strong><p><a href="#termos" data-action="terms">Termos e condições</a><br><a href="#privacidade" data-action="privacy">Política de privacidade</a></p></div>
+    <small>© 2026 TRAVECO. Todos os direitos reservados.</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" aria-label="Fechar">×</button>
+      <h2 id="modalTitle">TRAVECO</h2>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+</body>
+</html>
