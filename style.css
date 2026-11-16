@@ -21,7 +21,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; }
 button { cursor: pointer; }
 .topbar { min-height: 78px; padding: 10px clamp(16px,3vw,38px); display:flex; align-items:center; justify-content:space-between; gap:20px; background:var(--blue); border-bottom:2px solid var(--ink); position:sticky; top:0; z-index:20; }
-.brand { color:#fff; font: italic 800 clamp(23px,3vw,32px) var(--serif); text-decoration:none; letter-spacing:-1px; text-shadow:1px 2px 0 #111; }
+.brand { color:#fff; font: italic 800 clamp(23px,3vw,32px) var(--serif); text-decoration:none; letter-spacing:-1px; text-shadow:1px 2px 0 #111; display:flex; align-items:center; gap:10px; }
+.brand-logo { width:48px; height:46px; object-fit:contain; display:block; border-radius:9px; padding:3px; background:#fff; border:2px solid #fff; outline:2px solid #102f45; box-shadow:0 2px 7px rgba(0,0,0,.38); }
+.footer-brand-title { display:flex; align-items:center; gap:10px; }
+.footer-brand-title img { width:42px; height:40px; object-fit:contain; padding:3px; border-radius:8px; background:#fff; border:2px solid #fff; outline:2px solid #102f45; box-shadow:0 2px 7px rgba(0,0,0,.32); }
 .main-nav { display:flex; align-items:center; gap:clamp(8px,2.2vw,30px); }
 .main-nav a { color:#fff; text-decoration:none; font-size:clamp(15px,1.8vw,22px); font-weight:800; text-shadow:1px 2px 0 #111; padding:10px 12px; border-radius:999px; display:flex; gap:8px; align-items:center; }
 .main-nav a.active,.main-nav a:hover { color:var(--pink); background:#fff; text-shadow:none; outline:1px solid var(--ink); }
