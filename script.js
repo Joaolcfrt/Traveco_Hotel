@@ -11,46 +11,61 @@ const STORAGE = {
 
 const HOTELS = [
   {
-    id: 'conrad', name: 'Conrad Maldives', rating: 9.6, price: 3656, priceLabel: 'R$ 3.656 a R$ 5.131', location: 'Ilhas Maldivas', rooms: 5, baths: 5, tag: 'Mais popular',
-    image: 'assets/conrad-maldives.png', gallery: ['assets/conrad-maldives.png','assets/jade-mountain.png','assets/rayavadee.png'],
-    description: 'Um refúgio sobre águas cristalinas, com villas privativas, paisagens tropicais e vistas inesquecíveis do oceano.', amenities: ['Villas sobre a água','Piscina','Restaurante','Wi-Fi','Praia privativa']
+    id: 'recanto', name: 'Recanto Cataratas Thermas Resort & Convention', rating: 9.0, price: 737, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Foz do Iguaçu, PR', region: 'Paraná', rooms: 'Consulte', baths: 'Consulte', tag: 'Destaque no Paraná',
+    image: 'https://www.recantocataratasresort.com.br/fotos/_v/resort-aerea-piscinas-1280.webp', gallery: ['https://www.recantocataratasresort.com.br/fotos/_v/resort-aerea-piscinas-1280.webp','https://www.recantocataratasresort.com.br/fotos/_v/piscina-termal-panoramica-1280.webp','https://www.recantocataratasresort.com.br/fotos/_v/recreacao-casa-arvore-1280.webp'],
+    description: 'Resort em Foz do Iguaçu com piscinas termais, piscina coberta aquecida, recreação, spa, gastronomia e opções de lazer para famílias.', amenities: ['Piscinas termais','Spa','Gastronomia','Recreação','Esportes e lazer'], website: 'https://www.recantocataratasresort.com.br/'
   },
   {
-    id: 'jade', name: 'Jade Mountain Resort', rating: 9.0, price: 7203, priceLabel: 'R$ 7.203 a R$ 25.850', location: 'Santa Lúcia', rooms: 4, baths: 4, tag: 'Vista panorâmica',
-    image: 'assets/jade-mountain.png', gallery: ['assets/jade-mountain.png','assets/conrad-maldives.png','assets/villa-interior.png'],
-    description: 'Arquitetura integrada à paisagem tropical, com vistas para as montanhas Pitons e ambientes pensados para o descanso.', amenities: ['Vista para montanhas','Piscina privativa','Restaurante','Wi-Fi','Spa']
+    id: 'copacabana', name: 'Copacabana Palace, A Belmond Hotel', rating: 9.5, price: 4480, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Rio de Janeiro, RJ', region: 'Sudeste', rooms: 'Consulte', baths: 'Consulte', tag: 'Ícone do Rio de Janeiro',
+    image: 'https://assets.waybird.com/lodge_images/images/000/182/182/original/iStock-2213778481.jpg', gallery: ['https://assets.waybird.com/lodge_images/images/000/182/182/original/iStock-2213778481.jpg'],
+    description: 'Hotel histórico de frente para a Praia de Copacabana, com piscina, restaurantes, spa e acomodações em um edifício emblemático do Rio.', amenities: ['De frente para a praia','Piscina','Restaurantes','Spa','Eventos'], website: 'https://www.belmond.com/pt-br/hotels/south-america/brazil/copacabana-palace-rio-de-janeiro'
   },
   {
-    id: 'rayavadee', name: 'Rayavadee', rating: 9.6, price: 2700, priceLabel: 'R$ 2.700 a R$ 19.000', location: 'Krabi, Tailândia', rooms: 4, baths: 3, tag: 'Praia',
-    image: 'assets/rayavadee.png', gallery: ['assets/rayavadee.png','assets/conrad-maldives.png','assets/jade-mountain.png'],
-    description: 'Resort cercado por jardins tropicais e praias de areia clara na costa de Krabi.', amenities: ['Jardins tropicais','Piscina','Restaurante','Wi-Fi','Acesso à praia']
+    id: 'vira', name: 'Virá Farm Hotel', rating: 9.0, price: 1200, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Teixeira Soares, PR', region: 'Paraná', rooms: 'Consulte', baths: 'Consulte', tag: 'Destaque no Paraná',
+    image: 'https://virafarmhotel.com.br/wp-content/themes/vira102021/image/foto-acomodacoes.jpeg', gallery: ['https://virafarmhotel.com.br/wp-content/themes/vira102021/image/foto-acomodacoes.jpeg','https://virafarmhotel.com.br/wp-content/themes/vira102021/image/quarto-1.png','https://virafarmhotel.com.br/wp-content/themes/vira102021/image/quarto-2.png'],
+    description: 'Hotel-fazenda em Teixeira Soares, com bangalôs, suítes e chalés em meio à natureza, além de experiências, gastronomia e spa.', amenities: ['Bangalôs','Chalés','Natureza','Spa','Gastronomia'], website: 'https://virafarmhotel.com.br/'
   },
   {
-    id: 'villa', name: 'Villa Amistà Pousada Boutique', rating: 9.5, price: 1256, priceLabel: 'R$ 1.256 / dia', location: 'Campos do Jordão, SP', rooms: 4, baths: 2, tag: 'Em seu país',
-    image: 'assets/villa-amista.png', gallery: ['assets/villa-amista.png','assets/villa-interior.png','assets/villa-noite.png'],
-    description: '“Amistà” significa amizade no dialeto italiano, inspirando uma proposta de acolhimento e tranquilidade. A pousada ocupa 3.600 m² de jardins e árvores nativas da Serra da Mantiqueira. Fica a poucos minutos a pé do centrinho de Capivari e de atrações locais.', amenities: ['3.600 m² de jardins','Café da manhã','Wi-Fi','Área verde','Perto de Capivari']
+    id: 'rosewood', name: 'Rosewood São Paulo', rating: 9.4, price: 3200, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'São Paulo, SP', region: 'Sudeste', rooms: 'Consulte', baths: 'Consulte', tag: 'Design e luxo urbano',
+    image: 'https://media.admagazine.com/photos/65759413805d7f330b0fc62a/4%3A3/w_2664%2Ch_1998%2Cc_limit/14.jpg', gallery: ['https://media.admagazine.com/photos/65759413805d7f330b0fc62a/4%3A3/w_2664%2Ch_1998%2Cc_limit/14.jpg'],
+    description: 'Hotel instalado no complexo Cidade Matarazzo, com arquitetura histórica, torre contemporânea, jardins verticais, gastronomia e espaços de bem-estar.', amenities: ['Arquitetura e design','Piscinas','Jardins','Gastronomia','Bem-estar'], website: 'https://www.rosewoodhotels.com/pt/sao-paulo'
   },
   {
-    id: 'quinta', name: 'Quinta dos Pinhais Pouso e Charme', rating: 9.0, price: 2295, priceLabel: 'R$ 2.295 / dia', location: 'Serra da Mantiqueira, SP', rooms: 2, baths: 1, tag: 'Em seu país',
-    image: 'assets/quinta-pinhais.png', gallery: ['assets/quinta-pinhais.png','assets/villa-amista.png','assets/villa-interior.png'],
-    description: 'Hospedagem charmosa cercada pela natureza da Serra da Mantiqueira, ideal para descansar e aproveitar a paisagem.', amenities: ['Natureza','Wi-Fi','Estacionamento','Área externa']
+    id: 'jurema', name: 'Jurema Águas Quentes', rating: 9.0, price: 990, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Iretama, PR', region: 'Paraná', rooms: 'Consulte', baths: 'Consulte', tag: 'Destaque no Paraná',
+    image: 'https://juremaaguasquentes.com.br/wp-content/themes/jurema/assets/img/descubra-1.webp', gallery: ['https://juremaaguasquentes.com.br/wp-content/themes/jurema/assets/img/descubra-1.webp','https://juremaaguasquentes.com.br/wp-content/themes/jurema/assets/img/descubra-2.webp','https://juremaaguasquentes.com.br/wp-content/themes/jurema/assets/img/imagem-lagos.webp'],
+    description: 'Complexo de resorts em Iretama com águas termais, piscinas, natureza, gastronomia e opções de hospedagem nos resorts Lagos de Jurema e Jardins de Jurema.', amenities: ['Águas termais','Piscinas','Natureza','Gastronomia','Spa'], website: 'https://juremaaguasquentes.com.br/'
   },
   {
-    id: 'vilatoro', name: 'Vilatoro Guest House', rating: 9.9, price: 1200, priceLabel: 'R$ 1.200 / dia', location: 'Brasil', rooms: 2, baths: 1, tag: 'Em seu país',
-    image: 'assets/vilatoro.png', gallery: ['assets/vilatoro.png','assets/quinta-pinhais.png','assets/villa-interior.png'],
-    description: 'Uma hospedagem acolhedora para descansar, aproveitar a estrutura de lazer e conhecer a região.', amenities: ['Piscina','Área externa','Wi-Fi','Estacionamento']
+    id: 'fasano-salvador', name: 'Fasano Salvador', rating: 9.2, price: 1900, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Salvador, BA', region: 'Nordeste', rooms: 'Consulte', baths: 'Consulte', tag: 'Charme histórico',
+    image: 'https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt6f05b4ffed07c54d/698a015c16d8840345c36d06/fasano-salvador-brazil.jpg?auto=webp&branch=production&crop=3%3A2&quality=75&width=3840', gallery: ['https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt6f05b4ffed07c54d/698a015c16d8840345c36d06/fasano-salvador-brazil.jpg?auto=webp&branch=production&crop=3%3A2&quality=75&width=3840'],
+    description: 'Hotel instalado em edifício histórico no centro de Salvador, combinando arquitetura Art Déco, hospitalidade, gastronomia e vista para a Baía de Todos-os-Santos.', amenities: ['Edifício histórico','Piscina','Gastronomia','Spa','Centro histórico'], website: 'https://www.fasano.com.br/hoteis/fasano-salvador'
+  },
+  {
+    id: 'nannai', name: 'Nannai Muro Alto Beach Resort', rating: 9.3, price: 2500, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Ipojuca, PE', region: 'Nordeste', rooms: 'Consulte', baths: 'Consulte', tag: 'Resort à beira-mar',
+    image: 'https://admin.panrotas.com.br/media/thumb/cropper/permalink/fix/1200%2C675/?source=media-files-original%2F2021%2F10%2F05%2Fe33a92f8e2633a153991180a60356b33-nannaimuroalto.jpeg', gallery: ['https://admin.panrotas.com.br/media/thumb/cropper/permalink/fix/1200%2C675/?source=media-files-original%2F2021%2F10%2F05%2Fe33a92f8e2633a153991180a60356b33-nannaimuroalto.jpeg'],
+    description: 'Resort em Muro Alto, no litoral pernambucano, conhecido por seus bangalôs, piscinas integradas, jardins tropicais e acesso à praia.', amenities: ['Praia','Piscinas','Bangalôs','Gastronomia','Lazer'], website: 'https://www.nannai.com.br/'
+  },
+  {
+    id: 'lk-design', name: 'LK Design Hotel', rating: 9.1, price: 1100, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Florianópolis, SC', region: 'Sul', rooms: 'Consulte', baths: 'Consulte', tag: 'Design contemporâneo',
+    image: 'https://midias.em.com.br/_midias/jpg/2026/03/19/20260316-122805-65447434.jpg', gallery: ['https://midias.em.com.br/_midias/jpg/2026/03/19/20260316-122805-65447434.jpg','https://images.trvl-media.com/lodging/61000000/60340000/60339600/60339586/61d0ce25.jpg?h=800&impolicy=fcrop&quality=medium&w=1200'],
+    description: 'Hotel contemporâneo no centro de Florianópolis, com piscina na cobertura e vista para a cidade e a Baía Norte.', amenities: ['Piscina na cobertura','Vista para a baía','Restaurante','Academia','Design'], website: 'https://lkdesignhotel.com.br/'
+  },
+  {
+    id: 'anavilhanas', name: 'Anavilhanas Jungle Lodge', rating: 9.2, price: 2800, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Novo Airão, AM', region: 'Norte', rooms: 'Consulte', baths: 'Consulte', tag: 'Experiência na Amazônia',
+    image: 'https://res.cloudinary.com/enchanting/images/w_1600%2Ch_700%2Cc_fill%2Cf_auto/artemis-mdm/56a92bcf-6bc9-442b-b73f-3dbb0a3b3ffb/hotel-anavilhanas-jungle-lodge-brasilien.jpg', gallery: ['https://res.cloudinary.com/enchanting/images/w_1600%2Ch_700%2Cc_fill%2Cf_auto/artemis-mdm/56a92bcf-6bc9-442b-b73f-3dbb0a3b3ffb/hotel-anavilhanas-jungle-lodge-brasilien.jpg','https://planetaexo.com/trips/_next/image?q=85&url=https%3A%2F%2Fmidia.planetaexo.com%2Fwp-content%2Fuploads%2F2025%2F09%2F31.jpg&w=1080'],
+    description: 'Lodge em meio à floresta amazônica, próximo ao Arquipélago de Anavilhanas, com hospedagem integrada à paisagem e experiências de natureza.', amenities: ['Floresta amazônica','Piscina','Passeios na natureza','Gastronomia','Lodge'], website: 'https://www.anavilhanaslodge.com/'
+  },
+  {
+    id: 'hotel-das-cataratas', name: 'Hotel das Cataratas, A Belmond Hotel', rating: 9.6, price: 4500, priceLabel: 'Diária demonstrativa · consulte o hotel', location: 'Foz do Iguaçu, PR', region: 'Paraná', rooms: 'Consulte', baths: 'Consulte', tag: 'Destaque no Paraná',
+    image: 'https://belmondcdn.azureedge.net/assets/photos/cat/1600x900/cat-ext-entrance01_1600x900.jpg', gallery: ['https://belmondcdn.azureedge.net/assets/photos/cat/1600x900/cat-ext-entrance01_1600x900.jpg'],
+    description: 'Hotel histórico dentro do Parque Nacional do Iguaçu, com acesso exclusivo às Cataratas em horários selecionados, piscina, restaurantes e spa.', amenities: ['Dentro do Parque Nacional','Piscina','Restaurantes','Spa','Acesso às Cataratas'], website: 'https://www.belmond.com/pt-br/hotels/south-america/brazil/iguassu-falls/belmond-hotel-das-cataratas'
   }
 ];
 
-const DEFAULT_REVIEWS = {
-  villa: [
-    { id: 'seed-villa-1', name: 'Luciene', rating: 10, trip: 'Viagem a dois', date: '25/10/2026', text: 'Hotel excelente. Tudo personalíssimo e acolhedor. Equipe super profissional e simpática. Café da manhã super variado e gostoso.', verified: true },
-    { id: 'seed-villa-2', name: 'Denner Willian', rating: 10, trip: 'Viagem a dois', date: '25/10/2026', text: 'Da localização ao Staff, simplesmente incrível, você se sente totalmente em casa! Recomendo.', verified: true }
-  ]
-};
+const DEFAULT_REVIEWS = {};
 
 let currentRoute = 'home';
-let selectedHotelId = 'villa';
+let selectedHotelId = 'recanto';
 let pendingBookingId = null;
 let authMode = 'login';
 let toastTimer = null;
@@ -207,14 +222,14 @@ function homePage() {
       <div class="field"><label for="searchGuests">♙ HÓSPEDES:</label><select id="searchGuests" name="guests"><option value="2">2 hóspedes</option><option value="1">1 hóspede</option><option value="3">3 hóspedes</option><option value="4">4 hóspedes</option><option value="5">5+ hóspedes</option></select></div>
       <button class="primary-button" type="submit">BUSCAR →</button>
     </form>
-    ${hotelSection('MAIS POPULARES:', HOTELS.slice(0,3))}
-    ${hotelSection('EM SEU PAÍS:', HOTELS.slice(3))}
+    ${hotelSection('DESTAQUES NO PARANÁ:', HOTELS.filter(hotel => hotel.region === 'Paraná'))}
+    ${hotelSection('DESCUBRA O BRASIL:', HOTELS.filter(hotel => hotel.region !== 'Paraná'), 'Hospedagens de diferentes regiões do país, com fotografias reais dos estabelecimentos.')}
     <section class="callout"><div><h3>Planeje sua próxima pausa.</h3><p>Salve seus favoritos, confira comentários e organize suas reservas.</p></div><button class="primary-button" data-action="navigate" data-route="hotels">EXPLORAR HOTÉIS</button></section>
   </div>`;
 }
 function hotelsPage() {
   return `<div class="container"><div class="page-head"><div><p class="page-kicker">ESCOLHA SUA PRÓXIMA ESTADIA</p><h1>HOTÉIS</h1><p class="section-subtitle">Explore as opções e abra cada hospedagem para ver detalhes e comentários.</p></div><span class="pill">${HOTELS.length} hospedagens</span></div>
-    <div class="filter-bar"><input id="hotelSearch" type="search" placeholder="Buscar hotel ou destino..." aria-label="Buscar hotel ou destino"><select id="hotelSort" aria-label="Ordenar hotéis"><option value="recommended">Mais populares</option><option value="price">Menor preço</option><option value="rating">Melhor avaliação</option></select><select id="hotelCountry" aria-label="Filtrar região"><option value="all">Todas as regiões</option><option value="local">Em seu país</option><option value="international">Internacionais</option></select></div>
+    <div class="filter-bar"><input id="hotelSearch" type="search" placeholder="Buscar hotel ou destino..." aria-label="Buscar hotel ou destino"><select id="hotelSort" aria-label="Ordenar hotéis"><option value="recommended">Mais populares</option><option value="price">Menor preço</option><option value="rating">Melhor avaliação</option></select><select id="hotelCountry" aria-label="Filtrar região"><option value="all">Todo o Brasil</option><option value="Paraná">Paraná</option><option value="Sudeste">Sudeste</option><option value="Nordeste">Nordeste</option><option value="Sul">Sul</option><option value="Norte">Norte</option></select></div>
     <div class="hotel-grid" id="hotelGrid">${HOTELS.map(hotelCard).join('')}</div></div>`;
 }
 function detailPage() {
@@ -227,20 +242,20 @@ function detailPage() {
     <section class="detail-shell"><div class="detail-top"><div><p class="page-kicker">${escapeHTML(hotel.location.toUpperCase())}</p><h1>${escapeHTML(hotel.name)}</h1><div>${stars(rating)} &nbsp; <strong>${rating.toFixed(1).replace('.', ',')}/10</strong> · ${reviews.length} avaliação(ões)</div></div><button class="secondary-button" data-action="favorite" data-id="${hotel.id}">${state.favorites.includes(hotel.id) ? '♥ SALVO' : '♡ FAVORITAR'}</button></div>
       <div class="gallery">${gallery}</div>
       <div class="detail-columns"><div>
-        <section class="white-panel"><h2>Sobre esta hospedagem</h2><p class="hotel-description">${escapeHTML(hotel.description)}</p><div class="amenities">${amenities}<span class="amenity">${hotel.rooms} quartos</span><span class="amenity">${hotel.baths} banheiros</span></div></section>
+        <section class="white-panel"><h2>Sobre esta hospedagem</h2><p class="hotel-description">${escapeHTML(hotel.description)}</p><div class="amenities">${amenities}</div></section>
         <section class="white-panel" style="margin-top:18px"><h2>COMENTÁRIOS</h2><div class="rating-summary"><span class="rating-number">${rating.toFixed(1).replace('.', ',')}</span><div>${stars(rating)}<div class="review-meta">Avaliação média demonstrativa</div></div></div>
           <div class="review-list">${reviews.length ? reviews.map(review => `<article class="review-card"><div class="review-heading"><div><div class="review-name">${escapeHTML(review.name)}</div><div class="review-meta">${escapeHTML(review.trip || 'Hospedagem')} · ${escapeHTML(review.date || '')}</div></div><strong>${Number(review.rating).toFixed(1).replace('.', ',')}/10</strong></div><div>${stars(review.rating)}</div><p>${escapeHTML(review.text)}</p>${review.verified ? '<div class="review-meta">✓ Avaliação de demonstração</div>' : '<div class="review-meta">Comentário publicado neste navegador</div>'}</article>`).join('') : '<p class="muted">Ainda não há comentários. Seja a primeira pessoa a avaliar esta hospedagem.</p>'}</div>
           <form class="review-form" id="reviewForm" data-hotel="${hotel.id}"><h3>Deixe seu comentário</h3><p class="review-meta">Compartilhe sua experiência com outros viajantes.</p><div class="form-grid"><div class="form-field"><label for="reviewRating">SUA NOTA (0 A 10)</label><select id="reviewRating" required><option value="">Selecione</option>${[10,9,8,7,6,5,4,3,2,1,0].map(n=>`<option value="${n}">${n}/10</option>`).join('')}</select></div><div class="form-field"><label for="reviewTrip">TIPO DE VIAGEM</label><select id="reviewTrip"><option>Viagem a dois</option><option>Família</option><option>Viagem com amigos</option><option>Viagem individual</option><option>Viagem a trabalho</option></select></div><div class="form-field full"><label for="reviewText">SEU COMENTÁRIO</label><textarea id="reviewText" minlength="8" maxlength="800" required placeholder="Conte o que achou da hospedagem..."></textarea></div></div><button class="primary-button" type="submit">PUBLICAR COMENTÁRIO</button></form>
         </section>
       </div>
-      <aside class="white-panel detail-aside"><p class="page-kicker">A PARTIR DE</p><div class="booking-price">${formatCurrency(hotel.price)}</div><p class="muted" style="font:12px var(--sans)">Preço de referência por diária. Valor demonstrativo, sujeito às datas.</p><div class="summary-line"><span>Quartos</span><strong>${hotel.rooms}</strong></div><div class="summary-line"><span>Banheiros</span><strong>${hotel.baths}</strong></div><div class="summary-line"><span>Avaliação</span><strong>${rating.toFixed(1).replace('.', ',')}/10</strong></div><button class="primary-button" style="width:100%;margin-top:17px" data-action="start-booking" data-id="${hotel.id}">AGENDAR</button></aside></div>
+      <aside class="white-panel detail-aside"><p class="page-kicker">A PARTIR DE</p><div class="booking-price">${formatCurrency(hotel.price)}</div><p class="muted" style="font:12px var(--sans)">Preço de referência por diária. Valor demonstrativo, sujeito às datas.</p><div class="summary-line"><span>Quartos e estrutura</span><strong>Consulte o hotel</strong></div><div class="summary-line"><span>Avaliação</span><strong>${rating.toFixed(1).replace('.', ',')}/10</strong></div><button class="primary-button" style="width:100%;margin-top:17px" data-action="start-booking" data-id="${hotel.id}">AGENDAR</button></aside></div>
     </section></div>`;
 }
 function bookingPage() {
   const hotel = getHotel(selectedHotelId);
   const today = todayISO();
   return `<div class="container"><div class="page-head"><div><p class="page-kicker">TRAVECO · AGENDAR</p><h1>DIAS DISPONÍVEIS</h1></div></div><div class="booking-layout"><section class="white-panel"><h2>Dados da hospedagem</h2><p class="muted" style="font:13px var(--sans)">Selecione o período e a quantidade de hóspedes.</p><form id="bookingForm"><div class="form-grid"><div class="form-field"><label for="checkin">DIA / CHECK-IN</label><input id="checkin" type="date" min="${today}" required></div><div class="form-field"><label for="checkout">ATÉ / CHECK-OUT</label><input id="checkout" type="date" min="${today}" required></div><div class="form-field"><label for="bookingGuests">HÓSPEDES</label><select id="bookingGuests"><option value="1">1 hóspede</option><option value="2" selected>2 hóspedes</option><option value="3">3 hóspedes</option><option value="4">4 hóspedes</option><option value="5">5 hóspedes</option><option value="6">6 hóspedes</option></select></div><div class="form-field"><label for="bookingNote">OBSERVAÇÕES</label><input id="bookingNote" maxlength="180" placeholder="Opcional"></div></div><div class="notice">Este é um agendamento fictício para demonstração. Nenhuma reserva será enviada ao hotel.</div><button class="primary-button" type="submit">CONTINUAR PARA PAGAMENTO</button></form></section>
-    <aside class="white-panel"><img src="${hotel.image}" alt="${escapeHTML(hotel.name)}" style="width:100%;height:180px;object-fit:cover;border:1px solid #111;border-radius:15px"><h2 style="margin-top:15px">${escapeHTML(hotel.name)}</h2><p class="muted" style="font:13px var(--sans)">⌖ ${escapeHTML(hotel.location)}</p><div class="summary-line"><span>Valor por diária</span><strong>${formatCurrency(hotel.price)}</strong></div><div class="summary-line"><span>Quartos / banheiros</span><strong>${hotel.rooms} / ${hotel.baths}</strong></div><p class="muted" style="font:11px/1.5 var(--sans)">O valor total será calculado após a escolha das datas.</p></aside></div></div>`;
+    <aside class="white-panel"><img src="${hotel.image}" alt="${escapeHTML(hotel.name)}" style="width:100%;height:180px;object-fit:cover;border:1px solid #111;border-radius:15px"><h2 style="margin-top:15px">${escapeHTML(hotel.name)}</h2><p class="muted" style="font:13px var(--sans)">⌖ ${escapeHTML(hotel.location)}</p><div class="summary-line"><span>Valor por diária</span><strong>${formatCurrency(hotel.price)}</strong></div><div class="summary-line"><span>Quartos e estrutura</span><strong>Consulte o hotel</strong></div><p class="muted" style="font:11px/1.5 var(--sans)">O valor total será calculado após a escolha das datas.</p></aside></div></div>`;
 }
 function bookingTotal(booking) {
   const hotel = getHotel(booking.hotelId);
@@ -540,8 +555,7 @@ function filterHotels() {
   let list = HOTELS.filter(hotel => {
     const text = `${hotel.name} ${hotel.location}`.toLocaleLowerCase('pt-BR');
     const matchQuery = text.includes(query);
-    const local = ['villa','quinta','vilatoro'].includes(hotel.id);
-    const matchRegion = region === 'all' || (region === 'local' ? local : !local);
+    const matchRegion = region === 'all' || hotel.region === region;
     return matchQuery && matchRegion;
   });
   if (sort === 'price') list.sort((a,b) => a.price - b.price);
